@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Jedi Wars</title>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="container-fluid" id="bg">
+        <div id="mainheader">
+            <h1>Jedi Wars</h1>
+        </div>
+        <h3><strong>Choose your Avatar</strong></h3>
+        <div class="row text-center text-lg-left game_characters">
+            <br />
+            <div div-img="chewy" class="img-container col-lg-1 col-md-2 col-3 gcimgc">
+                <img data-img="chewy" class="img-fluid img-thumbnail gcimg" src="./assets/images/Chewbacca-icon.png" id="chewy" />
+            </div>
+            <div div-img="hans" class="img-container col-lg-1 col-md-2 col-3 gcimgc">
+                <img data-img="hans" class="img-fluid img-thumbnail gcimg" src="./assets/images/Han-Solo-02-icon.png" id="hans" />
+            </div>
+            <div div-img="jabba" class="img-container col-lg-1 col-md-2 col-3 gcimgc">
+                <img data-img="jabba" class="img-fluid img-thumbnail gcimg" src="./assets/images/Java-the-Hutt-icon.png" id="jabba" />
+            </div>
+            <div div-img="anakin" class="img-container col-lg-1 col-md-2 col-3 gcimgc">
+                <img data-img="anakin" class="img-fluid img-thumbnail gcimg" src="./assets/images/Anakin-Jedi-02-icon.png" id="anakin" />
+            </div>
+        </div>
+        <h3 class="chooseEnemy"><strong>Choose your Defender</strong></h3>
+        <div class="row text-center text-lg-left game_enemies"></div>
+
+        <div class="row d-flex justify-content-around">
+            <br />
+            <button class="btn btn-primary col-lg-1 col-md-1 col-3" id="attackBtn">Fire</button>
+            <audio id="mysoundclip" preload="auto">
+            <source src="./assets/audio/laser.wav"> </source>
+            </audio>
+        </div>
+
+        <div class="row text-center text-lg-left game_defender"></div>
+
+        <div class="row d-flex justify-content-around">
+            <br />
+            <button class="btn btn-primary col-lg-1 col-md-1 col-3" id="restartBtn">
+          Restart
+        </button>
+            <br />
+        </div>
+
+        <div class="row restart d-flex justify-content-around">
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/gamejquery.js"></script>
+    <script src="assets/javascript/mustache.js"></script>
+</body>
+
+</html>

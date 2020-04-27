@@ -1,0 +1,100 @@
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    background-color: red;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+#score {
+    color: white;
+    outline-color: black;
+    outline-width: 2 px;
+    font-weight: bolder;
+}
+
+#bg {
+    /* The image used */
+    background-image: url("../images/starwarsbg.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 1;
+}
+
+#game_characters {
+    z-index: 2;
+}
+
+.img-thumbnail {
+    height: 250px;
+}
+
+#mainheader {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    /* Never get smaller than this */
+    font-size: 60px;
+    justify-content: center;
+    background-color: #b7892c;
+    animation-name: stretch;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(0.3);
+        background-color: #b7892c;
+        border-radius: 100%;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        transform: scale(0.8);
+        background-color: #b59c88;
+    }
+}
+
+@media (min-width: 300px) {
+    h1 {
+        font-size: 50px;
+    }
+    .img-thumbnail {
+        height: 100px;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 75px;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        /* Never get larger than this */
+        font-size: 100px;
+    }
+}
